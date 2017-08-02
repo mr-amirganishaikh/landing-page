@@ -18,21 +18,46 @@
 <body>
     <main>
         <div class="about text-center">
-            <div class="section-heading">
-                <h2>Here&rsquo;s why you&rsquo;ll love Muscat Hills</h2>
-            </div>
-        </div>
-        <div class="specification">
             <div class="container">
-                <div class="col-md-5 img-wrapper">
+                <div class="section-heading">
+                    <h2>Here&rsquo;s why you&rsquo;ll love Muscat Hills</h2>
                 </div>
-                <div class="col-md-7 section-right">
-                    <div class="section-heading text-center">
-                        <h2>Specification of the Villa</h2>
+                <div class="section-body">
+                    <div class="content-wrap">
+                        <p>
+                            Muscat Hills is set in a picturesque hillside location with spectacular views of the golf course. It is a unique Free Hold Integrated Tourism Complex (ITC) development set within an 18-hole PGA certified green golf course located in the upcoming high quality residential location of Airport Heights in Muscat.
+                        </p>
+                        <p>
+                            As it is a Free Hold ITC development, both Omani nationals and Expatriates are eligible to get a residence visa on purchase of the villas in Muscat Hills.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="clearfix"></div>
+        <div class="specification container-fluid">
+            <div class="col-md-5 img-wrapper">
+            </div>
+            <div class="col-md-7 section-right" style="">
+                <div class="section-heading text-center">
+                    <h2>Specification of the Villa</h2>
+                </div>
+                <div class="section-body">
+                    <ul class="specification-list">
+                        <li>Living and Dining Room: Marble Flooring &amp; Skirting</li>
+                        <li>Passages: Marble Flooring &amp; Skirting</li>
+                        <li>Kitchen: Granite work top with all white goods</li>
+                        <li>Master Bedroom: Wooden Laminated Flooring</li>
+                        <li>Other Bedrooms &amp; Dressers: Vitrified porcelain tiles</li>
+                        <li>Ensuite Bathrooms: Vitrified porcelain tiles with European brand of sanitary ware &amp; fittings</li>
+                        <li>Windows: Double glazed aluminum windows</li>
+                        <li>Doors: Wooden Flush doors with Ash veneer and stainless steel ironmongery</li>
+                        <li>Air-conditioning: Concealed ducted system</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
         <div class="whats-near text-center">
             <div class="container">
                 <div class="section-heading inverse">
@@ -71,6 +96,7 @@
                 </div>
             </div>
         </div>
+        <div class="clearfix"></div>
         <div class="footer-form">
             <div class="container text-center">
                 <div class="section-heading">
@@ -110,6 +136,7 @@
                 </div>
             </div>
         </div>
+        <div class="clearfix"></div>
     </main>
     <footer>
         <div class="container text-center">
@@ -119,6 +146,25 @@
 </body>
 <script src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="js/custom.js"></script>
+<script type="text/javascript">
+    var equalHeight = function(options) {
+        var target = options.targetSection;
+        var triger = options.trigerSection;
+
+        var trigerHeight = $(triger).outerHeight();
+
+        $(target).css({
+            'height': trigerHeight
+        });
+    }
+
+    $(document).ready(function() {
+        equalHeight({
+            trigerSection: '.section-right',
+            targetSection: '.img-wrapper'
+        });
+    });
+
+</script>
 
 </html>

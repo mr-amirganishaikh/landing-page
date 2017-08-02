@@ -141,7 +141,7 @@ main {
                 &:nth-child(2) {
                     background-image: url(../img/orig_emerald_island_pool_clubhouse.jpg);
                 }
-                &.big{
+                &.big {
                     min-height: 500px;
                     background-image: url(../img/1.jpg);
                 }
@@ -149,11 +149,52 @@ main {
         }
     }
     .specification {
-        .section-heading {
+        background-color: darken($color-white, 5%);
+        padding-left: 0px;
+        padding-right: 0px;
+        .img-wrapper{
+            background-image: url('../img/download.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+        .section-right {
             padding: 60px 0px;
+            .section-body {
+                .specification-list {
+                    li {
+                        list-style: none;
+                        margin-bottom: 3px;
+                        font-size: 1rem;
+                        font-family: $raleway;
+                        font-weight: 700;
+                        letter-spacing: 1px;
+                        line-height: 1.75em;
+                        &:before {
+                            @extend .font-awesome;
+                            margin-right: 10px;
+                            content: "\f058";
+                            color: $color-teel;
+                        }
+                    }
+                }
+            }
         }
     }
     .about {
         padding: 60px 0px;
+        .section-body{
+            .content-wrap{
+                width: 60%;
+                margin: 0 auto;
+                p{
+                    font-size: 1rem;
+                    font-family: $raleway;
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                    line-height: 1.5em;
+                }
+            }
+        }
     }
 }

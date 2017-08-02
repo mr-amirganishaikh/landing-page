@@ -117,7 +117,7 @@
 .roboto {
   font-family: "Roboto", sans-serif !important; }
 
-.font-awesome {
+.font-awesome, main .specification .section-right .section-body .specification-list li:before {
   font: normal normal normal 14px/1 FontAwesome;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -346,9 +346,39 @@ main .whats-near {
     main .whats-near .section-body .whats-box.big {
       min-height: 500px;
       background-image: url(../img/1.jpg); }
-main .specification .section-heading {
-  padding: 60px 0px; }
+main .specification {
+  background-color: #f2f2f2;
+  padding-left: 0px;
+  padding-right: 0px; }
+  main .specification .img-wrapper {
+    background-image: url("../img/download.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  main .specification .section-right {
+    padding: 60px 0px; }
+    main .specification .section-right .section-body .specification-list li {
+      list-style: none;
+      margin-bottom: 3px;
+      font-size: 1rem;
+      font-family: "Raleway", sans-serif;
+      font-weight: 700;
+      letter-spacing: 1px;
+      line-height: 1.75em; }
+      main .specification .section-right .section-body .specification-list li:before {
+        margin-right: 10px;
+        content: "\f058";
+        color: #009688; }
 main .about {
   padding: 60px 0px; }
+  main .about .section-body .content-wrap {
+    width: 60%;
+    margin: 0 auto; }
+    main .about .section-body .content-wrap p {
+      font-size: 1rem;
+      font-family: "Raleway", sans-serif;
+      font-weight: 700;
+      letter-spacing: 1px;
+      line-height: 1.5em; }
 
 /*# sourceMappingURL=style.css.map */
