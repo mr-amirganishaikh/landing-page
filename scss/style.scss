@@ -12,7 +12,33 @@ footer {
     box-shadow: 0px 0px 17px 0px #a2a2a2;
 }
 
+header {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: $color-white;
+    padding: 15px 0px;
+    .logo {
+        width: 240px;
+        float: left;
+        display: inline-block;
+        img {
+            width: 100%;
+        }
+    }
+}
+
 main {
+    .btn-submit {
+        background-color: $color-cyan;
+        border-color: darken($color-cyan, 10%);
+        text-transform: uppercase;
+        color: $color-white;
+        margin: 10px 0px;
+        &:hover, &:focus{
+            color: $color-white;
+        }
+    }
     .section-heading {
         position: relative;
         display: block;
@@ -77,13 +103,6 @@ main {
                     border-bottom: 1px solid lighten($color-base, 50%);
                     @include border-radius(0px);
                     box-shadow: none;
-                }
-                .btn-submit {
-                    background-color: $color-cyan;
-                    border-color: darken($color-cyan, 10%);
-                    text-transform: uppercase;
-                    color: $color-white;
-                    margin: 10px 0px;
                 }
                 &.effect {
                     &:after {
@@ -165,6 +184,25 @@ main {
                 margin-bottom: 20px;
                 padding-left: 0px;
                 padding-right: 0px;
+                h4 {
+                    strong {
+                        float: left;
+                        display: inline-block;
+                        padding: 5px 5px 5px 0px;
+                    }
+                    span {
+                        float: right;
+                        display: inline-block;
+                        background: $color-cyan;
+                        color: $color-white;
+                        font-size: 1rem;
+                        padding: 5px;
+                        font-weight: 700;
+                        border-radius: 5px;
+                        letter-spacing: 1px;
+                        font-family: $montserrat;
+                    }
+                }
             }
         }
     }
@@ -222,10 +260,11 @@ main {
         position: relative;
         display: block;
         width: 100%;
-        box-shadow: 0px 0px 17px 0px #a2a2a2;
+        box-shadow: 0px 3px 9px 0px #a2a2a2;
         #introCarousel {
             .carousel-inner {
                 .item {
+                    transition-property: opacity;
                     img {
                         width: 100%;
                         height: 100vh;
@@ -248,7 +287,7 @@ main {
                         h3 {
                             border-bottom: 2px solid $color-white;
                             padding-bottom: 5px;
-                            font-size: 1.6rem;
+                            font-size: 2rem;
                             font-family: $montserrat;
                             letter-spacing: 1px;
                             text-shadow: -2px -3px 1px lighten($color-base, 30%);
@@ -257,19 +296,36 @@ main {
                         }
                     }
                 }
-            }
-            .carousel-fixed {
-                position: absolute;
-                top: 30px;
-                left: 30px;
-                background: rgba($color-white, 0.5);
-                width: 240px;
-                border-radius: 5px;
-                .logo {
-                    padding: 15px;
-                    width: 100%;
+                .item,
+                .active.left,
+                .active.right {
+                    opacity: 0;
+                }
+                .active,
+                .next.left,
+                .prev.right {
+                    opacity: 1;
+                }
+                .next,
+                .prev,
+                .active.left,
+                .active.right {
+                    left: 0;
+                    transform: translate3d(0, 0, 0);
                 }
             }
+            /*.carousel-fixed {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            background: rgba($color-white, 0.5);
+            width: 240px;
+            border-radius: 5px;
+                .logo {
+                padding: 15px;
+                width: 100%;
+                }
+            }*/
             .carousel-form {
                 position: absolute;
                 right: 30px;
@@ -277,9 +333,9 @@ main {
                 background: $color-white;
                 padding: 20px;
                 text-align: center;
-                border: 3px solid $color-base;
                 border-radius: 4px;
-                min-width: 240px;
+                min-width: 300px;
+                box-shadow: 0px 3px 9px 0px #a2a2a2;
                 .form-group {
                     position: relative;
                     overflow: hidden;
@@ -292,13 +348,6 @@ main {
                         border-bottom: 1px solid lighten($color-base, 50%);
                         @include border-radius(0px);
                         box-shadow: none;
-                    }
-                    .btn-submit {
-                        background-color: $color-cyan;
-                        border-color: darken($color-cyan, 10%);
-                        text-transform: uppercase;
-                        color: $color-white;
-                        margin: 10px 0px;
                     }
                     &.effect {
                         &:after {

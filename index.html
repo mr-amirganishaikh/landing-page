@@ -16,9 +16,16 @@
 </head>
 
 <body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/userimage1491825997.png" alt="" title="" />
+            </div>
+        </div>
+    </header>
     <main>
         <div class="intro">
-            <div id="introCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div id="introCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
                     <li data-target="#introCarousel" data-slide-to="0" class="active"></li>
@@ -65,11 +72,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-fixed">
+                <!--<div class="carousel-fixed">
                     <img src="img/userimage1491825997.png" class="logo" />
-                </div>
+                </div>-->
                 <div class="carousel-form">
-                    <form action="#" method="post" class="form">
+                    <form action="foyer-form1.php" method="post" class="form">
                         <div class="form-group effect">
                             <input type="text" class="form-control" name="fullName" placeholder="Full Name" required />
                         </div>
@@ -77,10 +84,10 @@
                             <input type="email" class="form-control" name="email" placeholder="Email Address" required />
                         </div>
                         <div class="form-group effect">
-                            <input type="text" class="form-control" name="country" placeholder="Country" required />
+                            <input type="text" class="form-control" name="phone" placeholder="Phone Number" required />
                         </div>
                         <div class="form-group effect">
-                            <input type="text" class="form-control" name="phone" placeholder="Phone Number" required />
+                            <input type="text" class="form-control" name="country" placeholder="Country" required />
                         </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-submit btn-block">
@@ -141,10 +148,11 @@
                         <div class="property-box container-fluid">
                             <img src="img/p1.jpg" width="100%">
                             <div class="col-xs-12 p-lr-none">
-                                <h4><strong>PAARTH REPUBLIC</strong></h4>
+                                <h4><strong>PAARTH REPUBLIC</strong> <span>INR 3200/ Sq Ft</span></h4>
+                                <div class="clearfix"></div>
                                 <p>3BHK</p>
                                 <p>Plot Size: 1700 Sq. Ft. Area</p>
-                                <p><strong>INR 3200/ Sq Ft</strong></p>
+                                <a data-target=".footer-form" href="javascript:void();" class="btn btn-submit">Enquire Now!</a>
                             </div>
                         </div>
                     </div>
@@ -152,10 +160,11 @@
                         <div class="property-box container-fluid">
                             <img src="img/p2.jpg" width="100%">
                             <div class="col-xs-12 p-lr-none">
-                                <h4><strong>AZEA BOTANICA</strong></h4>
+                                <h4><strong>AZEA BOTANICA</strong> <span>INR 3800/ Sq Ft</span></h4>
+                                <div class="clearfix"></div>
                                 <p>3-4 BHK</p>
                                 <p>Plot Size: 1425 Sq. ft. &amp; 1655 Sq.ft. Area</p>
-                                <p><strong>INR 3800/ Sq Ft</strong></p>
+                                <a data-target=".footer-form" href="javascript:void();" class="btn btn-submit">Enquire Now!</a>
                             </div>
                         </div>
                     </div>
@@ -163,10 +172,11 @@
                         <div class="property-box container-fluid">
                             <img src="img/p3.jpg" width="100%">
                             <div class="col-xs-12 p-lr-none">
-                                <h4><strong>PAARTH AADYANT</strong></h4>
+                                <h4><strong>PAARTH AADYANT</strong> <span>INR 3700/ Sq Ft</span></h4>
+                                <div class="clearfix"></div>
                                 <p>2-3 BHK</p>
                                 <p>Plot Size: 1213 &amp; 1460 Sq. Ft.</p>
-                                <p><strong>INR 3700/ Sq Ft</strong></p>
+                                <a data-target=".footer-form" href="javascript:void();" class="btn btn-submit">Enquire Now!</a>
                             </div>
                         </div>
                     </div>
@@ -174,10 +184,11 @@
                         <div class="property-box container-fluid">
                             <img src="img/p6.jpg" width="100%">
                             <div class="col-xs-12 p-lr-none">
-                                <h4><strong>OMKAR DAFFODILS</strong></h4>
+                                <h4><strong>OMKAR DAFFODILS</strong> <span>INR 3600/ Sq Ft</span></h4>
+                                <div class="clearfix"></div>
                                 <p>1-2-3 BHK</p>
                                 <p>Plot Size: 720, 1240 &amp; 1595 Sq. ft.</p>
-                                <p><strong>INR 3600/ Sq Ft</strong></p>
+                                <a data-target=".footer-form" href="javascript:void();" class="btn btn-submit">Enquire Now!</a>
                             </div>
                         </div>
                     </div>
@@ -185,10 +196,11 @@
                         <div class="property-box container-fluid">
                             <img src="img/p4.jpg" width="100%">
                             <div class="col-xs-12 p-lr-none">
-                                <h4><strong>RISHITA MANHATTAN</strong></h4>
+                                <h4><strong>RISHITA MANHATTAN</strong> <span>INR 3800/ Sq Ft</span></h4>
+                                <div class="clearfix"></div>
                                 <p>2-3 BHK + Store + Servant</p>
                                 <p>Plot Size: 1099 &amp; 1375 Sq. ft.</p>
-                                <p><strong>INR 3800/ Sq Ft</strong></p>
+                                <a data-target=".footer-form" href="javascript:void();" class="btn btn-submit">Enquire Now!</a>
                             </div>
                         </div>
                     </div>
@@ -196,10 +208,11 @@
                         <div class="property-box container-fluid">
                             <img src="img/p5.jpg" width="100%">
                             <div class="col-xs-12 p-lr-none">
-                                <h4><strong>ELDECO SAUBHGYAM TOWER</strong></h4>
+                                <h4><strong>ELDECO SAUBHGYAM <br/> TOWER</strong> <span>INR 3600/ Sq Ft</span></h4>
+                                <div class="clearfix"></div>
                                 <p>2 BHK</p>
                                 <p>Plot Size: 972 Sq. ft.</p>
-                                <p><strong>INR 3600/ Sq Ft</strong></p>
+                                <a data-target=".footer-form" href="javascript:void();" class="btn btn-submit">Enquire Now!</a>
                             </div>
                         </div>
                     </div>
@@ -252,7 +265,7 @@
                     <h2>Time is Running Out Book Your Foyers Properties</h2>
                 </div>
                 <div class="request-form">
-                    <form action="thankyou.php" method="post">
+                    <form action="foyer-form1.php" method="post">
                         <div class="col-md-6">
                             <div class="form-group effect">
                                 <input type="text" class="form-control" name="fullName" placeholder="Full Name" required />
@@ -306,11 +319,37 @@
             'height': trigerHeight
         });
     }
+    
+    var smoothScroll = function (options) {
+        var target = options.target;
+        var delay = options.delay;
+
+        // offset and offsetHeight declaration
+        var offset = options.offset;
+        var offsetHeight = 0;
+        if (isNaN(offset)) {
+            offsetHeight = $(offset).outerHeight();
+        } else {
+            offsetHeight = offset;
+        }
+        $(target).find('a').click(function () {
+            var scrollDiv = $(this).attr('data-target');
+            $('html, body').animate({
+                scrollTop: $(scrollDiv).offset().top - offsetHeight
+            }, delay);
+        });
+    };
 
     $(document).ready(function() {
         equalHeight({
             trigerSection: '.section-right',
             targetSection: '.img-wrapper'
+        });
+        
+        smoothScroll({
+            target: '.property-box',
+            delay: 1000,
+            offset: 0
         });
     });
 
