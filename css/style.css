@@ -364,6 +364,10 @@ main .whats-near {
       background-image: url(../img/n3.jpg); }
     main .whats-near .section-body .whats-box.four {
       background-image: url(../img/n4.jpg); }
+    main .whats-near .section-body .whats-box.five {
+      background-image: url(../img/n7.jpg); }
+    main .whats-near .section-body .whats-box.six {
+      background-image: url(../img/n6.jpg); }
     main .whats-near .section-body .whats-box.big {
       min-height: 500px;
       background-image: url(../img/n7.jpg); }
@@ -390,6 +394,17 @@ main .property-details {
       border-radius: 5px;
       letter-spacing: 1px;
       font-family: "Montserrat", sans-serif; }
+    main .property-details .section-body .property-box p {
+      font-size: 0.9rem; }
+    main .property-details .section-body .property-box .table-overflow {
+      overflow-x: scroll;
+      padding: 0px; }
+      main .property-details .section-body .property-box .table-overflow .table-property-details {
+        margin-bottom: 0px; }
+        main .property-details .section-body .property-box .table-overflow .table-property-details th {
+          min-width: 90px; }
+        main .property-details .section-body .property-box .table-overflow .table-property-details td {
+          min-width: 115px; }
 main .specification {
   background-color: #f2f2f2;
   padding-left: 0px;

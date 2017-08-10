@@ -168,6 +168,12 @@ main {
                 &.four {
                     background-image: url(../img/n4.jpg);
                 }
+                &.five{
+                    background-image: url(../img/n7.jpg);
+                }
+                &.six{
+                    background-image: url(../img/n6.jpg);
+                }
                 &.big {
                     min-height: 500px;
                     background-image: url(../img/n7.jpg);
@@ -202,6 +208,22 @@ main {
                         letter-spacing: 1px;
                         font-family: $montserrat;
                     }
+                }
+                p{
+                    font-size: 0.9rem;
+                }
+                .table-overflow{
+                    overflow-x: scroll;
+                    padding: 0px;
+                   .table-property-details{
+                       margin-bottom: 0px;
+                       th{
+                           min-width: 90px;
+                       }
+                        td{
+                            min-width: 115px;
+                        }
+                    } 
                 }
             }
         }
