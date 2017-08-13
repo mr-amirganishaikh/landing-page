@@ -344,6 +344,7 @@ main .whats-near {
       position: absolute;
       bottom: 0;
       left: 0;
+      width: 100%;
       color: #ffffff;
       text-shadow: 1px 1px 1px #2E2E2E; }
     main .whats-near .section-body .whats-box:hover {
@@ -367,7 +368,7 @@ main .whats-near {
     main .whats-near .section-body .whats-box.five {
       background-image: url(../img/n7.jpg); }
     main .whats-near .section-body .whats-box.six {
-      background-image: url(../img/n6.jpg); }
+      background-image: url(../img/n8.jpg); }
     main .whats-near .section-body .whats-box.big {
       min-height: 500px;
       background-image: url(../img/n7.jpg); }

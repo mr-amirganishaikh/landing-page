@@ -141,6 +141,7 @@ main {
                     position: absolute;
                     bottom: 0;
                     left: 0;
+                    width: 100%;
                     color: $color-white;
                     text-shadow: 1px 1px 1px $color-base;
                 }
@@ -172,7 +173,7 @@ main {
                     background-image: url(../img/n7.jpg);
                 }
                 &.six{
-                    background-image: url(../img/n6.jpg);
+                    background-image: url(../img/n8.jpg);
                 }
                 &.big {
                     min-height: 500px;
